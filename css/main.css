@@ -115,4 +115,39 @@ h6 {
   .container {
     width: 1200px;
   }
+}
+
+.header {
+  background-color: #ffb8ca;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__burger {
+  margin-left: auto;
+  width: 20px;
+  height: 12px;
+  background-color: #ffb8ca;
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.header__mobile {
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

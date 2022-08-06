@@ -1,0 +1,26 @@
+.header {
+  background-color: $bg-color;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header__burger {
+  margin-left: auto;
+  width: 20px;
+  height: 12px;
+  background-color: $bg-color;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__mobile {
+  position: absolute;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
