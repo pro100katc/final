@@ -1,10 +1,27 @@
-.header {
-  background-color: $bg-color;
-}
 .header-flex {
   display: flex;
   align-items: center;
+  background-color: $bg-color;
 }
+
+// MOBILE-MENU
+
+// .header__mobile {
+//   display: none;
+//   background-color: aqua;
+//   position: relative;
+//   @media screen and (min-width: 320px) {
+//     width: 250px;
+//     height: 502px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 254px;
+//     height: 1020px;
+//   }
+//   @media screen and(min-width:1200px) {
+//     display: none;
+//   }
+// }
 
 .header__burger {
   margin-left: auto;
@@ -12,15 +29,106 @@
   height: 12px;
   background-color: $bg-color;
 
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__close {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.header__mobile {
-  position: absolute;
-  display: none;
+.header__mobile-button {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+// .header__mobile-nav {
+//   position: absolute;
+//   display: none;
+//   top: 0;
+//   right: 0;
+//   width: 250px;
+//   height: 508px;
+//   background-color: #e17992;
+// }
+
+// .header__mobile-list + .header__mobile-list {
+//   margin-top: 22px;
+// }
+
+// .header__mobile-link {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.28;
+
+//   color: #ffffff;
+// }
+
+// MAIN NAVIGATION
+
+// .header__nav {
+//   margin-left: 128px;
+//   @media screen and (min-width: 320px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     display: block;
+//   }
+// }
+
+// .header__nav-list {
+//   display: flex;
+//   gap: 35px;
+// }
+
+// .header__nav-link {
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.31;
+
+//   color: #ffffff;
+//   transition: color 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+
+// .header__nav-link-active {
+//   color: $accent-color;
+// }
+
+// .header__button {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 12px;
+//   width: 159px;
+//   height: 44px;
+//   background: #ffffff;
+//   border-radius: 22px;
+//   color: $accent-color;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 21px;
+//   transition: background-color 250ms linear;
+
+//   &:hover {
+//     background-color: #ecebeb;
+//   }
+
+// @media screen and (min-width: 320px) {
+//   display: none;
+// }
+// @media screen and (min-width: 768px) {
+//   display: block;
+//   margin-left: 32px;
+// }
+// @media screen and (min-width: 1200px) {
+//   margin-left: auto;
+// }
+// }
