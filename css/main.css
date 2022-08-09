@@ -118,7 +118,7 @@ h6 {
 }
 
 .header-flex {
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +129,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffb8ca;
+  z-index: 2;
 }
 @media screen and (min-width: 320px) {
   .header-flex {
@@ -316,7 +317,7 @@ h6 {
   background-image: url(/img/ellipse320.png);
   background-repeat: no-repeat;
   background-position: right center;
-  height: 442px;
+  height: 502px;
   background-color: #ffb8ca;
   overflow: hidden;
 }
