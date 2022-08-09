@@ -106,20 +106,20 @@
     <!-- MAIN -->
 
     <main>
-      <section>
-        <div class="container hero">
+      <section class="hero">
+        <div class="container hero-bg">
           <!-- HERO -->
 
-          <h1 class="hero__title">ice cream made with passion</h1>
-          <button class="hero__button-product" type="button">Products</button>
-          <button class="hero__button-made" type="button">
-            How it’s made?
-          </button>
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title-big">passion</span>
+          </h1>
+          <a class="hero__button-product" href="#products"> Products </a>
+          <a class="hero__button-made" href="#advantages"> How it’s made? </a>
           <img
+            class="hero__img-milk"
             srcset="./img/milk.png 1x, ./img/milk@2x.png 2x"
             src="./img/milk.png"
             alt="milk"
-            class="hero__img-milk"
             width="213"
             height="216"
           />
@@ -127,7 +127,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="hero__-button-arrow" type="button">
+          <button class="hero__button-arrow" type="button">
             <img
               class="button__arrow-rigth"
               src="./img/arrow-right.jpg"
@@ -136,14 +136,6 @@
               height="26"
             />
           </button>
-          <img
-            class="hero__elipse"
-            srcset="./img/elipsemain.png 1x, ./img/elipsemain@2x.png 2x"
-            src="./img/elipsemain.png"
-            alt="elipse main"
-            width="534"
-            height="534"
-          />
           <img
             class="hero__icecream"
             srcset="./img/icemain.png 1x, ./img/icemain@2x.png 2x"

@@ -1,98 +1,17 @@
-.header {
-  z-index: 3;
-}
 .header-flex {
-  padding-top: 32px;
-
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $bg-color;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 8px;
+  }
 }
 
 .header__logo-icon {
   height: 50px;
-}
-// MOBILE-MENU
-
-.header__mobile {
-  position: fixed;
-
-  padding: 20px 20px;
-  top: 0;
-  left: 0;
-  background-color: #e17992;
-  transform: translateY(-100%);
-  transition: transform 250ms linear;
-
-  @media screen and (min-width: 320px) {
-    width: 250px;
-    height: 502px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 254px;
-    height: 1020px;
-  }
-  @media screen and(min-width:1200px) {
-    display: none;
-  }
-  &.is-open {
-    transform: translatey(0);
-  }
-}
-
-.header__burger {
-  margin-left: auto;
-  width: 20px;
-  height: 12px;
-  background-color: $bg-color;
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-.header__close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.header__mobile-button {
-  margin-top: 40px;
-  margin-bottom: 32px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  width: 209px;
-  height: 44px;
-  background-color: #ffffff;
-  border-radius: 22px;
-  color: $accent-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  transition: background-color 250ms linear;
-
-  &:hover {
-    background-color: #ecebeb;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 186px;
-  }
-}
-
-.header__mobile-list + .header__mobile-list {
-  margin-top: 22px;
-}
-
-.header__mobile-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-
-  color: #ffffff;
 }
 
 // MAIN NAVIGATION
@@ -132,7 +51,7 @@
 }
 
 .header__button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -150,26 +69,13 @@
     background-color: #ecebeb;
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
-    display: block;
     margin-left: 32px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
-}
-
-.hero {
-  background-color: #ffb8ca;
-  position: relative;
-}
-
-.hero__elipse {
-  position: absolute;
-  top: -30px;
-  right: 149px;
-  z-index: 0;
 }
