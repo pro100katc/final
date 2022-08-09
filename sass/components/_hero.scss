@@ -9,7 +9,7 @@
   // }
   background-repeat: no-repeat;
   background-position: right center;
-  height: 502px;
+  height: 442px;
   background-color: $bg-color;
   overflow: hidden;
 
@@ -55,12 +55,20 @@
   color: #ffffff;
 
   &-big {
-    font-size: 34px;
+    font-size: 45px;
     color: #d41443;
   }
 }
 
+.hero__link-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
 .hero__button-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 62px;
   height: 24px;
 
@@ -74,6 +82,9 @@
   color: #ffffff;
 }
 .hero__button-made {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 83px;
   height: 24px;
 
@@ -157,7 +168,6 @@
   right: 32px;
   width: 171px;
   height: 410px;
-  z-index: 0;
 }
 
 .hero__img-milk {
