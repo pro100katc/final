@@ -1,6 +1,5 @@
 .header-flex {
-  position: absolute;
-  // transform: translateX(50%);
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,9 +10,9 @@
   }
 }
 
-.header__logo-icon {
-  height: 50px;
-}
+// .header__logo-icon {
+//   height: 50px;
+// }
 
 // MAIN NAVIGATION
 
